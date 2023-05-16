@@ -1,0 +1,61 @@
+﻿<html>
+<div class='invoice overflow-auto'>
+    <div style='min-width: 600px'>
+        <header>
+            <div class='row'>
+                <div class='col'></div>
+                <div class='col company-details'>
+                    <h2 class='name'><img src='https://eastoner.net/img/logo.svg' width='120' alt=''></h2>
+                    <div>ContactPersonNameUA</div>
+                    <div>ContactPersonAdressUA</div>
+                    <div>ContactPersonNameENG</div>
+                    <div>ContactPersonAdressENG</div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class='row contacts'>
+                <div class='col invoice-to'>
+                    <div class='text-gray-light'>INVOICE TO:</div>
+                    <h2 class='to'>CustomerName</h2>
+                    <div class='address'>CustomerAdressENG</div>
+                    <div class='address'>CustomerAdressUA</div>
+                </div>
+                <div class='col invoice-details'>
+                    <h1 class='invoice-id'>INVOICE №InvoiceNumber</h1>
+                    <div class='date'>Date of Invoice: InvoiceCreated</div>
+                    <div class='date'>Due Date: PaymentDate</div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class='text-left'>DESCRIPTION</th>
+                        <th class='text-right'>PRICE PER UNIT</th>
+                        <th class='text-right'>UNITS</th>
+                        <th class='text-right'>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    Items
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan='2'></td>
+                        <td colspan='2'>SUBTOTAL</td>
+                        <td>{subtotal}</td>
+                    </tr>
+                    <tr>
+                        <td colspan='2'></td>
+                        <td colspan='2'>GRAND TOTAL</td>
+                        <td>{total}</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class='thanks'>Thank you!</div>
+        </main>
+    </div>
+    <div class='payment'>Payment Details:PaymentDetails</div>
+</div>
+</html>
